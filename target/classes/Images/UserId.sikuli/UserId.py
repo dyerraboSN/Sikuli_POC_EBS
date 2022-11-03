@@ -1,0 +1,1 @@
+type(Pattern("1667474161803.png").exact().targetOffset(-82,-3),"tstatm");
