@@ -1,19 +1,16 @@
 package org.example;
 
+import org.opencv.core.Core;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.sikuli.script.FindFailed;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
-import java.io.File;
 
 
 public class BasePage {
 
-public static void main(String[] args) throws FindFailed {
+  public static void main(String[] args) throws FindFailed {
 
-    //ChromeOptions chromeOptions = new ChromeOptions();
+      System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 
     WebDriver driver = WebDriverManager.chromedriver().create();
 
